@@ -1,6 +1,3 @@
-// need to include this so plugin gets loaded
-#provider "coreos"
-
 resource "coreos_ami" "test" {
     channel = "stable"
     type = "hvm"
