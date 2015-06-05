@@ -1,6 +1,6 @@
 # CoreOS AMI provider for Terraform
 
-The [Terraform](http://terraform.io) provider is for dynamically finding the latest CoreOS AMI.
+This [Terraform](http://terraform.io) provider is for dynamically finding the latest CoreOS AMI.
 
 ## Status
 
