@@ -1,3 +1,5 @@
+PREFIX := /usr/local
+
 all: bin/terraform-provider-coreos
 
 bin/terraform-provider-coreos:
@@ -8,3 +10,6 @@ clean:
 
 distclean: clean
 	rm -rf pkg
+
+install: bin/terraform-provider-coreos
+	install -m 755 $< $(PREFIX)/$<
