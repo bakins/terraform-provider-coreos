@@ -12,4 +12,5 @@ distclean: clean
 	rm -rf pkg
 
 install: bin/terraform-provider-coreos
-	install -m 755 $< $(PREFIX)/$<
+	install -m 755 -d $(PREFIX)/bin
+	install -m 755 $< $(PREFIX)/bin/terraform-provider-coreos
