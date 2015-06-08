@@ -8,28 +8,28 @@ Development/Testing
 
 ## Install
 
-You can install in one of two ways:
+This project used [gb](http://getgb.io), so you must have it
+installed.
 
 ```shell
-$ go get github.com/bakins/terraform-provider-coreos
+$ git clone  github.com/bakins/terraform-provider-coreos
+$ make
+$ sudo make install
 ```
 
-or
+will install to `/usr/local/bin/terraform-provider-coreos`. Set PREFIX
+to change this:
 
 ```shell
-$ mkdir -p $GOPATH/src/github.com/bakins
-$ cd $GOPATH/src/github.com/bakins
-$ git clone https://github.com/bakins/terraform-provider-coreos.git
-$ go build; cp terraform-provider-coreos /usr/local/bin
-# or...
-$ go install
+$sudo make install PREFIX=/usr
 ```
+
 
 Note: You may need to add something like the following to `~/.terraformrc` if you get an error about missing the coreos provider when running terraform:
 
 ```
 providers {
-  coreos = "/Users/bakins/go/bin/terraform-provider-coreos"
+  coreos = "/usr/local/bin/terraform-provider-coreos"
 }
 ```
 
