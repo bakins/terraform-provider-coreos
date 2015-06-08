@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/bakins/terraform-provider-coreos/coreos"
+	"coreos"
+
 	"github.com/hashicorp/terraform/plugin"
 )
 
