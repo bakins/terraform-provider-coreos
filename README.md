@@ -12,7 +12,8 @@ This project used [gb](http://getgb.io), so you must have it
 installed.
 
 ```shell
-$ git clone  github.com/bakins/terraform-provider-coreos
+$ git clone https://github.com/bakins/terraform-provider-coreos
+$ cd terraform-provider-coreos
 $ make
 $ sudo make install
 ```
